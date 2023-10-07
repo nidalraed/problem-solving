@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+//uesing for 
+// function powerOfTwoFor(arr) {
+//   const result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     result.push(Math.pow(2, arr[i]));
+//   }
+//   return result;
+// }
+
+// const inputArray = [1, 2, 3];
+// const resultFor = powerOfTwoFor(inputArray);
+// console.log(resultFor); 
+
+
+//foreche
+// function powerOfTwoForEach(arr) {
+//   const result = [];
+//   arr.forEach(function (element) {
+//     result.push(Math.pow(2, element));
+//   });
+//   return result;
+// }
+
+// const inputArray = [1, 2, 3];
+// const resultForEach = powerOfTwoForEach(inputArray);
+// console.log(resultForEach); 
+
+//map
+
+function powerOfTwoMap(arr) {
+  return arr.map(function (element) {
+    return Math.pow(2, element);
+  });
+}
+
+const inputArray = [1, 2, 3];
+const resultMap = powerOfTwoMap(inputArray);
+console.log(resultMap);
+
+    </script>
+</body>
+</html>

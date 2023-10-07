@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ex13: What is the output of the following JS code segments? and Why?
+
+/*a)*/ var employee = {
+    firstName: 'Nidal',
+    sayHi: function(){
+        console.log("Hi Coach ! " + this.firstName);
+    }
+}
+employee.sayHi() // ?
+// OUTPUT : Hi Coach ! Nidal
+
+/*b)*/ var employee = {
+    firstName: 'Rawan',
+    info: {
+        hasCar: true,
+        hasPet: true
+    },
+    printInfo: function(){
+        console.log("Car owner? " + this.hasCar);
+    }
+}
+
+employee.printInfo() 
+
+// OUTPUT : Car owner? undefined
+
+
+
+/*c)*/ var employee = {
+    firstName: 'Rawan',
+    info: {
+        hasCar: true,
+        hasPet: true,
+        printAddress: function(){
+            return this.data.address;
+        },
+        data: {
+            address: "Zarqa"
+        }
+    },
+}
+
+employee.info.printAddress() 
+
+// OUTPUT : Zarqa
+
+    </script>
+</body>
+</html>
